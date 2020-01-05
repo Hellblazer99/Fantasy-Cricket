@@ -13,7 +13,6 @@ If python is installed:
 	2.Type cmd and press enter
 	3.Type the following command : pip install PyQt5
 	
-
 3.sqlite3
 If python is installed:
 	1.Press 'Windows key'+'R' on your keyboard
