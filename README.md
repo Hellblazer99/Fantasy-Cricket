@@ -8,8 +8,8 @@ and download the prompted files and add python to path variable
 
 2. pyqt5
 To install pyqt5 you need to have python version >= 3 installed
-If python is installed:
-	1.Press 'Windows key'+'R' on your keyboard
+If python is installed:\n
+	1.Press 'Windows key'+'R' on your keyboard\n
 	2.Type cmd and press enter
 	3.Type the following command : pip install PyQt5
 	
