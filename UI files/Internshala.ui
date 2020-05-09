@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>765</width>
+    <height>622</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string extracomment="Fantasy Cricket">Fanasy Cricket</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(196, 188, 255, 250);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="topbox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>741</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(220, 220, 220)</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="batsmen">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Batsmen(BAT)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="bowlers">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>50</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Bowlers(BOW)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="allrnd">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>50</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Allrounders(AR)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="wktkp">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>50</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Wicket-keepers(WK)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="your_selections">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Tekton Pro Ext</family>
+       <pointsize>12</pointsize>
+       <weight>9</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 12pt &quot;Tekton Pro Ext&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Your Selections</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="availpoints">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>150</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Points Available</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="bowButton">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>190</y>
+      <width>51</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>BOW</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="wkButton">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>190</y>
+      <width>41</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>WK</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="usedpoints">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>150</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Points Used</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="batButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>190</y>
+      <width>51</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>BAT</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="arButton">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>190</y>
+      <width>51</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>AR</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="teamname">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>190</y>
+      <width>271</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Team Name: </string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>220</y>
+      <width>271</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>220</y>
+      <width>271</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <zorder>usedpoints</zorder>
+   <zorder>topbox</zorder>
+   <zorder>availpoints</zorder>
+   <zorder>bowButton</zorder>
+   <zorder>wkButton</zorder>
+   <zorder>batButton</zorder>
+   <zorder>arButton</zorder>
+   <zorder>teamname</zorder>
+   <zorder>listWidget</zorder>
+   <zorder>listWidget_2</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>765</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuManage_Teams">
+    <property name="title">
+     <string>Manage Teams</string>
+    </property>
+    <addaction name="actionNew_Team"/>
+    <addaction name="actionOpen_Team"/>
+    <addaction name="actionSave_Team"/>
+    <addaction name="actionEvaluate_Team"/>
+   </widget>
+   <addaction name="menuManage_Teams"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <action name="actionNew_Team">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>New Team</string>
+   </property>
+  </action>
+  <action name="actionOpen_Team">
+   <property name="text">
+    <string>Open Team</string>
+   </property>
+  </action>
+  <action name="actionSave_Team">
+   <property name="text">
+    <string>Save Team</string>
+   </property>
+  </action>
+  <action name="actionEvaluate_Team">
+   <property name="text">
+    <string>Evaluate Team</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
